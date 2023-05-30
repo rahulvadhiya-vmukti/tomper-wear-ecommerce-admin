@@ -140,7 +140,7 @@ function CreateNewProductModal() {
 
   return (
     <>
-      <Button colorScheme='brown' onClick={onOpen}>
+      <Button colorScheme='blue' onClick={onOpen}>
         Create New Product
       </Button>
 
@@ -156,7 +156,7 @@ function CreateNewProductModal() {
                 ref={initialRef}
                 placeholder='Product Name'
                 name='name'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={name}
                 onChange={updateNewProductDetails}
               />
@@ -168,7 +168,7 @@ function CreateNewProductModal() {
                 type='number'
                 placeholder='Product Price'
                 name='price'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={price}
                 onChange={updateNewProductDetails}
               />
@@ -180,7 +180,7 @@ function CreateNewProductModal() {
                 type='number'
                 placeholder='Product Stock'
                 name='stock'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={stock}
                 onChange={updateNewProductDetails}
               />
@@ -191,7 +191,7 @@ function CreateNewProductModal() {
               <Textarea
                 placeholder='Product Description'
                 name='description'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={description}
                 onChange={updateNewProductDetails}
               />
@@ -202,7 +202,7 @@ function CreateNewProductModal() {
               <Input
                 placeholder='Product Category'
                 name='category'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={category}
                 onChange={updateNewProductDetails}
               />
@@ -213,7 +213,7 @@ function CreateNewProductModal() {
               <Input
                 placeholder='Product Company'
                 name='company'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={company}
                 onChange={updateNewProductDetails}
               />
@@ -224,7 +224,7 @@ function CreateNewProductModal() {
               <Input
                 placeholder='Product Sizes (comma separated)'
                 name='sizes'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={sizes}
                 onChange={updateNewProductDetails}
               />
@@ -236,7 +236,7 @@ function CreateNewProductModal() {
               <Input
                 placeholder='Product Colors (comma separated)'
                 name='colors'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={colors}
                 onChange={updateNewProductDetails}
               />
@@ -247,11 +247,11 @@ function CreateNewProductModal() {
             <FormControl mt={4}>
               <FormLabel>Images</FormLabel>
               <Center
-                bg='brown.50'
+                bg='blue.50'
                 minHeight={100}
                 my={5}
                 borderWidth={3}
-                borderColor='brown.200'
+                borderColor='blue.200'
                 borderStyle='dashed'
                 borderRadius='lg'
                 {...getRootProps()}
@@ -297,7 +297,7 @@ function CreateNewProductModal() {
             <FormControl mt={4}>
               <Checkbox
                 name='shipping'
-                colorScheme='brown'
+                colorScheme='blue'
                 isChecked={shipping}
                 onChange={updateNewProductDetails}
               >
@@ -308,7 +308,7 @@ function CreateNewProductModal() {
             <FormControl mt={4}>
               <Checkbox
                 name='featured'
-                colorScheme='brown'
+                colorScheme='blue'
                 isChecked={featured}
                 onChange={updateNewProductDetails}
               >
@@ -324,7 +324,7 @@ function CreateNewProductModal() {
             <Button
               isLoading={loading}
               loadingText='Creating Product'
-              colorScheme='brown'
+              colorScheme='blue'
               onClick={handleSubmit}
             >
               Save

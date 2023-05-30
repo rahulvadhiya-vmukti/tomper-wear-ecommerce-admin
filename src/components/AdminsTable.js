@@ -76,7 +76,7 @@ function AdminsTable({ admins }) {
     <SimpleGrid bg='white' p={5} shadow='lg' borderRadius='lg' overflowX='auto'>
       {loading ? (
         <HStack my={8} alignItems='center' justifyContent='center'>
-          <Spinner size='lg' color='brown.500' />
+          <Spinner size='lg' color='blue.500' />
         </HStack>
       ) : (
         <Table variant='simple'>
@@ -104,7 +104,7 @@ function AdminsTable({ admins }) {
                     <HStack spacing='5'>
                       <Select
                         maxW={125}
-                        focusBorderColor='brown.500'
+                        focusBorderColor='blue.500'
                         value={privilege}
                         onChange={(e) => handleEdit(e, adminId)}
                       >

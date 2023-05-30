@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/logo.svg';
+// import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
+// import logo from '../assets/logo.svg';
 import {
   IconButton,
   Avatar,
@@ -80,7 +82,8 @@ export default function MobileNav({ onOpen, ...rest }) {
 
       <Image
         src={logo}
-        boxSize='150px'
+        // boxSize='150px'
+        width="40px"
         display={{ base: 'flex', md: 'none' }}
       />
 

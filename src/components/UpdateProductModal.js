@@ -150,7 +150,7 @@ function UpdateProductModal({ id }) {
   return (
     <>
       <Text
-        colorScheme='brown'
+        colorScheme='blue'
         minW='100%'
         onClick={() => {
           fetchSingleProduct(id);
@@ -172,7 +172,7 @@ function UpdateProductModal({ id }) {
                 ref={initialRef}
                 placeholder='Product Name'
                 name='name'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={name}
                 onChange={updateExistingProductDetails}
               />
@@ -184,7 +184,7 @@ function UpdateProductModal({ id }) {
                 type='number'
                 placeholder='Product Price'
                 name='price'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={price}
                 onChange={updateExistingProductDetails}
               />
@@ -196,7 +196,7 @@ function UpdateProductModal({ id }) {
                 type='number'
                 placeholder='Product Stock'
                 name='stock'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={stock}
                 onChange={updateExistingProductDetails}
               />
@@ -207,7 +207,7 @@ function UpdateProductModal({ id }) {
               <Textarea
                 placeholder='Product Description'
                 name='description'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={description}
                 onChange={updateExistingProductDetails}
               />
@@ -218,7 +218,7 @@ function UpdateProductModal({ id }) {
               <Input
                 placeholder='Product Category'
                 name='category'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={category}
                 onChange={updateExistingProductDetails}
               />
@@ -229,7 +229,7 @@ function UpdateProductModal({ id }) {
               <Input
                 placeholder='Product Company'
                 name='company'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={company}
                 onChange={updateExistingProductDetails}
               />
@@ -240,7 +240,7 @@ function UpdateProductModal({ id }) {
               <Input
                 placeholder='Product Sizes (comma separated)'
                 name='sizes'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={sizes}
                 onChange={updateExistingProductDetails}
               />
@@ -252,7 +252,7 @@ function UpdateProductModal({ id }) {
               <Input
                 placeholder='Product Colors (comma separated)'
                 name='colors'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={colors}
                 onChange={updateExistingProductDetails}
               />
@@ -263,11 +263,11 @@ function UpdateProductModal({ id }) {
             <FormControl mt={4}>
               <FormLabel>Images</FormLabel>
               <Center
-                bg='brown.50'
+                bg='blue.50'
                 minHeight={100}
                 my={5}
                 borderWidth={3}
-                borderColor='brown.200'
+                borderColor='blue.200'
                 borderStyle='dashed'
                 borderRadius='lg'
                 {...getRootProps()}
@@ -313,7 +313,7 @@ function UpdateProductModal({ id }) {
             <FormControl mt={4}>
               <Checkbox
                 name='shipping'
-                colorScheme='brown'
+                colorScheme='blue'
                 isChecked={shipping}
                 onChange={updateExistingProductDetails}
               >
@@ -324,7 +324,7 @@ function UpdateProductModal({ id }) {
             <FormControl mt={4}>
               <Checkbox
                 name='featured'
-                colorScheme='brown'
+                colorScheme='blue'
                 isChecked={featured}
                 onChange={updateExistingProductDetails}
               >
@@ -340,7 +340,7 @@ function UpdateProductModal({ id }) {
             <Button
               isLoading={loading}
               loadingText='Updating Product'
-              colorScheme='brown'
+              colorScheme='blue'
               onClick={handleSubmit}
             >
               Save

@@ -21,7 +21,7 @@ function OrderItemsList({ orderItems }) {
                 <Box bg={color} p='2' borderRadius='5' />
                 <Tag
                   variant='outline'
-                  colorScheme='brown'
+                  colorScheme='blue'
                   size='sm'
                   textTransform='uppercase'
                 >

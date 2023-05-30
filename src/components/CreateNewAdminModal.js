@@ -67,7 +67,7 @@ function CreateNewAdminModal() {
 
   return (
     <Box>
-      <Button colorScheme='brown' onClick={onOpen}>
+      <Button colorScheme='blue' onClick={onOpen}>
         Create New Admin
       </Button>
       <Modal initialFocusRef={initialRef} isOpen={isOpen} onClose={onClose}>
@@ -82,7 +82,7 @@ function CreateNewAdminModal() {
                 ref={initialRef}
                 placeholder='Full Name'
                 name='name'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={name}
                 onChange={updateNewAdminDetails}
               />
@@ -92,7 +92,7 @@ function CreateNewAdminModal() {
               <Input
                 placeholder='Email'
                 name='email'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={email}
                 onChange={updateNewAdminDetails}
               />
@@ -102,7 +102,7 @@ function CreateNewAdminModal() {
               <Input
                 placeholder='Password'
                 name='password'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={password}
                 onChange={updateNewAdminDetails}
               />
@@ -111,7 +111,7 @@ function CreateNewAdminModal() {
               <FormLabel>Privilege</FormLabel>
               <Select
                 name='privilege'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={privilege}
                 onChange={updateNewAdminDetails}
               >
@@ -127,7 +127,7 @@ function CreateNewAdminModal() {
             </Button>
             <Button
               isLoading={loading}
-              colorScheme='brown'
+              colorScheme='blue'
               onClick={handleSubmit}
             >
               Save

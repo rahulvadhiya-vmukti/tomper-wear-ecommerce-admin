@@ -3,7 +3,7 @@ import { useUserContext } from '../context/user_context';
 import { useToast } from '@chakra-ui/react';
 import { PreLoader } from '../components';
 import useMounted from '../hooks/useMounted';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 import {
   Flex,
   Box,
@@ -67,7 +67,7 @@ export default function LoginPage() {
     <Flex minH={'100vh'} align={'center'} justify={'center'} bg={'gray.50'}>
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Image src={logo} alt='logo' w='50%' />
+          <Image src={logo} alt='logo' w='25%' />
         </Stack>
         <Box bg={'white'} rounded={'lg'} boxShadow={'lg'} p={8}>
           <Stack spacing={4}>
@@ -77,7 +77,7 @@ export default function LoginPage() {
                 type='email'
                 placeholder='Enter your email address'
                 variant='filled'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -88,7 +88,7 @@ export default function LoginPage() {
                 type='password'
                 placeholder='Enter your password'
                 variant='filled'
-                focusBorderColor='brown.500'
+                focusBorderColor='blue.500'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -96,10 +96,10 @@ export default function LoginPage() {
             <Stack spacing={10}>
               <Button
                 isLoading={loading}
-                bg={'brown.400'}
+                bg={'blue.800'}
                 color={'white'}
                 _hover={{
-                  bg: 'brown.500',
+                  bg: 'blue.400',
                 }}
                 onClick={handleSubmit}
               >

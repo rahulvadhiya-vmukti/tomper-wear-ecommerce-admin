@@ -25,7 +25,7 @@ function AdminsPage() {
       <SidebarWithHeader>
         <HStack mb={5}>
           <Button
-            colorScheme='brown'
+            colorScheme='blue'
             variant='outline'
             leftIcon={<MdOutlineRefresh />}
             onClick={handleRefresh}
@@ -34,7 +34,7 @@ function AdminsPage() {
           </Button>
         </HStack>
         <VStack alignItems='center' justifyContent='center'>
-          <Spinner size='lg' color='brown.500' />
+          <Spinner size='lg' color='blue.500' />
         </VStack>
       </SidebarWithHeader>
     );
@@ -45,7 +45,7 @@ function AdminsPage() {
       <SidebarWithHeader>
         <HStack mb={5}>
           <Button
-            colorScheme='brown'
+            colorScheme='blue'
             variant='outline'
             leftIcon={<MdOutlineRefresh />}
             onClick={handleRefresh}
@@ -65,7 +65,7 @@ function AdminsPage() {
       <HStack mb={5}>
         <CreateNewAdminModal />
         <Button
-          colorScheme='brown'
+          colorScheme='blue'
           variant='outline'
           leftIcon={<MdOutlineRefresh />}
           onClick={handleRefresh}
